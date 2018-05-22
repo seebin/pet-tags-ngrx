@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <h3>额外的</h3>
+    <p class="form-text text-muted">选择要添加的任何额外部分.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4 offset-sm-2">
+    <label>
+      <input
+        type="checkbox"
+        [(ngModel)]="tagClip"
+        (change)="toggleClip()"> 包括标签夹
+    </label>
+  </div>
+
+  <div class="col-sm-4">
+    <label>
+      <input
+        type="checkbox"
+        [(ngModel)]="gems"
+        (change)="toggleGems()"> 添加宝石
+    </label>
+  </div>
+</div>
